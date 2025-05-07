@@ -18,7 +18,7 @@ const practiceAreas: PracticeArea[] = [
     id: 'family-law',
     title: 'Family Law',
     icon: '👪',
-    description: 'Our family law services provide compassionate guidance during life's most challenging transitions. We handle divorce, custody, and support matters with sensitivity and expertise.',
+    description: "Our family law services provide compassionate guidance during life's most challenging transitions. We handle divorce, custody, and support matters with sensitivity and expertise.",
     services: [
       'Divorce and Separation',
       'Child Custody and Visitation',
@@ -27,7 +27,7 @@ const practiceAreas: PracticeArea[] = [
       'Mediation Services'
     ],
     testimonial: {
-      quote: 'David provided clarity and empathy during my divorce. His guidance helped me secure a fair custody arrangement that puts my children first.',
+      quote: "David provided clarity and empathy during my divorce. His guidance helped me secure a fair custody arrangement that puts my children first.",
       author: 'Sarah M., Chatham'
     }
   },
@@ -44,7 +44,7 @@ const practiceAreas: PracticeArea[] = [
       'Land Use and Zoning Issues'
     ],
     testimonial: {
-      quote: 'Rodriguez Law Office made our first home purchase smooth and stress-free. Their attention to detail saved us from potential issues we wouldn't have noticed.',
+      quote: "Rodriguez Law Office made our first home purchase smooth and stress-free. Their attention to detail saved us from potential issues we wouldn't have noticed.",
       author: 'Michael & Jennifer K., Chatham'
     }
   },
@@ -52,7 +52,7 @@ const practiceAreas: PracticeArea[] = [
     id: 'estate-planning',
     title: 'Estate Planning',
     icon: '📝',
-    description: 'Protect your legacy and provide for your loved ones with our tailored estate planning services designed to safeguard your assets and express your wishes.',
+    description: "Protect your legacy and provide for your loved ones with our tailored estate planning services designed to safeguard your assets and express your wishes.",
     services: [
       'Wills and Trusts',
       'Power of Attorney',
@@ -61,7 +61,7 @@ const practiceAreas: PracticeArea[] = [
       'Probate Services'
     ],
     testimonial: {
-      quote: 'Creating our estate plan with David gave us peace of mind knowing our children's future is protected. The process was much simpler than we expected.',
+      quote: "Creating our estate plan with David gave us peace of mind knowing our children's future is protected. The process was much simpler than we expected.",
       author: 'Robert L., Chatham-Kent'
     }
   }
