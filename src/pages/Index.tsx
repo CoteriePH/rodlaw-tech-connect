@@ -1,12 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import NavBar from '../components/NavBar';
+import HeroCarousel from '../components/HeroCarousel';
+import PracticeAreas from '../components/PracticeAreas';
+import AboutSection from '../components/AboutSection';
+import TestimonialsSection from '../components/TestimonialsSection';
+import ContactSection from '../components/ContactSection';
+import FaqSection from '../components/FaqSection';
+import MapSection from '../components/MapSection';
+import Footer from '../components/Footer';
+import FloatingCTA from '../components/FloatingCTA';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-law-dark">
+      <NavBar />
+      <HeroCarousel />
+      <PracticeAreas />
+      <AboutSection />
+      <TestimonialsSection />
+      <FaqSection />
+      <ContactSection />
+      <MapSection />
+      <Footer />
+      <FloatingCTA />
     </div>
   );
 };

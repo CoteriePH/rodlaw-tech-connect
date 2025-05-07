@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +39,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -96,6 +93,47 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-law-dark text-white font-inter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+
+  .animate-glow {
+    animation: glow 2s infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #D4AF37, 0 0 10px #D4AF37;
+    }
+    to {
+      text-shadow: 0 0 20px #D4AF37, 0 0 30px #D4AF37;
+    }
+  }
+
+  .gold-text {
+    @apply text-transparent bg-gold-gradient bg-clip-text;
+  }
+
+  .vertical-gold-line {
+    @apply relative before:absolute before:top-0 before:left-0 before:h-full before:w-1 before:bg-law-gold;
+  }
+  
+  .circular-button {
+    @apply w-3 h-3 rounded-full bg-white opacity-50 hover:opacity-100 transition-opacity cursor-pointer;
+  }
+  
+  .circular-button.active {
+    @apply opacity-100;
+  }
+
+  .cta-button {
+    @apply px-6 py-3 bg-law-gold text-law-black font-semibold rounded hover:bg-law-gold-light transition-colors duration-300 inline-flex items-center justify-center;
+  }
+
+  .gold-underline {
+    @apply relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-[80px] after:h-1 after:bg-law-gold;
   }
 }
